@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-Tico Ligthart
+  Tico Ligthart
 
   #### Je startniveau:
-  blauw
+  Blauw start niveau
 
   #### Je focus:
- responsive
+  responsive
  
 </details>
 
@@ -36,16 +36,16 @@ Tico Ligthart
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-Bol.com namaken
-https://www.bol.com/nl/nl/
+  Bol.com 
+  https://www.bol.com/nl/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/bolpagina1.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/bolpagina2" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
