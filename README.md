@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.bol.com/nl/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Bol home page 
   <img src="readme-images/bolpagina1.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Bol boeken page 
   <img src="readme-images/bolpagina2.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
