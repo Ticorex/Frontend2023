@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Bol home page 
-  <img src="readme-images/bolpagina1.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/bolpagina1.jpg" width="375px" alt="De homepage van bol.com">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Bol boeken page 
-  <img src="readme-images/bolpagina2.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/bolpagina2.jpg" width="375px" alt="Een specifieke categorie van bol.com, boeken, waarbij er allemaal filter mogelijkheden staan">
  
 </details>
 
@@ -58,6 +58,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  1. Niet elke button/link is goed omschreven. D
+
 
 </details>
 
@@ -89,7 +91,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  dit ging goed: Ik merk dat ik door de lessen en opdrachten css wel beter begrijp. Mijn header is nog niet zoals op de site, maar wel al een beetje responsive.
+  
+  dit was lastig: Ik merk dat ik html eigenlijk best wel verleerd ben. Ik had bijvoorbeeld geen main en had de header buiten het body element staan.
+   <img src="readme-images/codehtml1.jpg"  alt="Html code voor voortgang gesprek 1">
 
 
   ### Agenda voor meeting
@@ -105,10 +110,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb uitleg gekregen over hoe ik mijn header verbeter en meer zoals die van Bol.com maak
+  - Ik heb mijn html verbeterd met wat simpele dingen die ik vergeten was zoals de header in de body zetten.
+  - Ik heb geleerd hoe je h2 elementen nou goed gebruikt en hoe je elementen semantisch correct onzichtbaar maakt.
 
 </details>
 
