@@ -71,9 +71,8 @@ header{
 
 }
 
-header ul li :first-of-type ::after{
-    content: url(images/user.png)
-}
+
+
 
 header nav {
     display: flex;
@@ -122,8 +121,13 @@ header nav ul a{
 
 }
 
+header nav ul li img{
+    width: 2em;
+    
+ }
+
 section ul{
-    list-style:
+    list-style: none;
 }
 
 section :first-of-type{
@@ -140,7 +144,7 @@ section :first-of-type a{
 
 section :first-of-type img{
     position: absolute;
-     
+ 
 }
 
 @media (width > 43.8em) {
@@ -155,9 +159,6 @@ section :first-of-type img{
         color: var(--color-text);
     }
 
-    header h1 img{
-        
-    }
 
     header nav ul a{
         color: var(--color-text);
