@@ -58,7 +58,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  1. Niet elke button/link is goed omschreven. D
+  1. Niet elke button/link is goed omschreven. De meeste buttons en links hebben wel een goede naam, maar sommige heten gewoon "button" of "link".
+  2. Html elementen zoals h1 etc zijn allemaal netjes toegepast.
 
 
 </details>

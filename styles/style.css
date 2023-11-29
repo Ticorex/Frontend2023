@@ -15,12 +15,25 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    --antibol: #eee;
+    --background: #eee;
+    --bolcolor: darkblue;
+	--color-text:#eee;
+    --color-text2: #111;
+   
 }
 
 
-
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  /* https://www.a11yproject.com/posts/how-to-hide-content */
 
 
 /****************/
@@ -29,3 +42,140 @@
 
 /* jouw code */
 
+a {
+   text-decoration: none;
+
+}
+
+body {
+    background-color: var(--background);
+}
+
+body img{
+    max-width: 100%;
+}
+
+h1 {
+    color: var(--color-text2);
+    padding-left: 0.5em;
+    
+}
+
+h1 img{
+    width: 10%;
+
+}
+
+header{
+    background-color: var(--antibol);
+
+}
+
+header ul li :first-of-type ::after{
+    content: url(images/user.png)
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav > button {
+    margin: 0.5em;
+    order: -1;
+
+}
+
+header nav form{
+    background-color: var(--bolcolor);
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    order: 20;
+}
+
+header nav form input{
+    flex-grow: 1;
+    line-height: 2em;
+    
+}
+
+header nav ul{
+    display: flex;
+    flex-grow: 1;
+    gap: 1em;
+    list-style: none;
+    min-width: 6em;
+    order: 10;
+    
+}
+
+
+header nav ul a{
+    color: var(--color-text2);
+    display: block;
+    line-height: 2em;
+    
+
+}
+
+section ul{
+    list-style:
+}
+
+section :first-of-type{
+    position: relative;
+    margin: 0;
+
+}
+
+section :first-of-type a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section :first-of-type img{
+    position: absolute;
+     
+}
+
+@media (width > 43.8em) {
+	
+	header {
+		background-color: var(--bolcolor);
+        color: var(--color-text) ;
+		
+	}
+
+    header h1{
+        color: var(--color-text);
+    }
+
+    header h1 img{
+        
+    }
+
+    header nav ul a{
+        color: var(--color-text);
+        display: block;
+        line-height: 2em;
+        order: 10;
+    }
+	
+	header nav form {
+        flex-grow:1;
+		width:auto;
+		
+	}
+
+    header nav form{
+        order: 0;
+        
+    }
+
+    
+}
