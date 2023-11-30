@@ -127,18 +127,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Goed:  ik heb geleerd mediaquery te gebruiken en dit toegepast.
+  <img src='readme-images/websiteresponsiveheader1.jpg'>
+  <img src='readme-images/websiteresponsiveheader2.jpg'>
+
+  Lastig: Ik heb niet super veel voortgang gemaakt deze week. Ik zit erg vast bij dingen die niet goed willen lukken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ Tico
+    1.Css img responsiveness
+    2.Css carousel
 
+  Aidan
+    1. 
+
+  Yusuf
+    1.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
