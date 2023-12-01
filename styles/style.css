@@ -97,6 +97,7 @@ header nav form{
 }
 
 header nav form input{
+    border-radius: 45%;
     flex-grow: 1;
     line-height: 2em;
     
