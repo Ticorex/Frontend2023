@@ -17,7 +17,7 @@
 	/* startje */
     --antibol: #eee;
     --background: #eee;
-    --bolcolor: darkblue;
+    --bolcolor: #0000a4;
 	--color-text:#eee;
     --color-text2: #111;
    
@@ -49,41 +49,43 @@ a {
 
 body {
     background-color: var(--background);
-}
-
-body img{
-    max-width: 100%;
+    margin: 0;
 }
 
 h1 {
     color: var(--color-text2);
-    padding-left: 0.5em;
+    width:3em;
     
 }
 
 h1 img{
-    width: 10%;
+    width: 100%;
 
 }
+
 
 header{
     background-color: var(--antibol);
 
 }
 
-
-
-
 header nav {
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
+    line-height: 2em;
 }
 
 header nav > button {
     margin: 0.5em;
     order: -1;
+    border-style: none;
+    background: none;
+
+}
+
+header nav > button img {
+    width: 3em;
 
 }
 
@@ -97,19 +99,24 @@ header nav form{
 }
 
 header nav form input{
-    border-radius: 45%;
     flex-grow: 1;
-    line-height: 2em;
+    min-height: 3.5em;
+    border-radius: 3em;
+    border-style: none;
     
 }
+
+
 
 header nav ul{
     display: flex;
     flex-grow: 1;
     gap: 1em;
+    justify-content: flex-end;
     list-style: none;
     min-width: 6em;
     order: 10;
+    margin-right: 2em;
     
 }
 
@@ -117,9 +124,12 @@ header nav ul{
 header nav ul a{
     color: var(--color-text2);
     display: block;
-    line-height: 2em;
-    
 
+}
+
+header nav ul li{
+    display: flex;
+    align-items: center;
 }
 
 header nav ul li img{
@@ -127,34 +137,40 @@ header nav ul li img{
     
  }
 
+
+
+
+section:first-of-type img{
+    width: 100%;
+}
+
 section ul{
     list-style: none;
 }
 
-section :first-of-type{
-    position: relative;
-    margin: 0;
+section:nth-of-type(2) ul{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+section:nth-of-type(2) ul li img{
+    max-width: (20em, 25%);
+    height: auto;   
 
 }
 
-section :first-of-type a{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-section :first-of-type img{
-    position: absolute;
- 
-}
-
-@media (width > 43.8em) {
+@media (width > 32.9em) {
 	
 	header {
 		background-color: var(--bolcolor);
         color: var(--color-text) ;
 		
 	}
+
 
     header h1{
         color: var(--color-text);
@@ -164,8 +180,11 @@ section :first-of-type img{
     header nav ul a{
         color: var(--color-text);
         display: block;
-        line-height: 2em;
         order: 10;
+    }
+
+    header nav img{
+        filter: invert() brightness(100);
     }
 	
 	header nav form {
