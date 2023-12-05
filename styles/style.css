@@ -63,6 +63,9 @@ h1 img{
 
 }
 
+h3 {
+    font-weight: 100;
+}
 
 header{
     background-color: var(--antibol);
@@ -137,9 +140,6 @@ header nav ul li img{
     
  }
 
-
-
-
 section:first-of-type img{
     width: 100%;
 }
@@ -154,12 +154,31 @@ section:nth-of-type(2) ul{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     overflow-x: scroll;
-    max-width: 100%;
 }
 
 section:nth-of-type(2) ul li img{
-    max-width: (20em, 25%);
+    width: 20em;
     height: auto;   
+
+}
+
+section:nth-of-type(3) ul{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
+
+section:nth-of-type(3) ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 10em;
+
+}
+
+section:nth-of-type(3) ul li img{
+    width: 10em;
 
 }
 
