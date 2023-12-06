@@ -20,6 +20,7 @@
     --bolcolor: #0000a4;
 	--color-text:#eee;
     --color-text2: #111;
+    --focuscolor2: #2ac1cc;
    
 }
 
@@ -42,14 +43,48 @@
 
 /* jouw code */
 
-a {
+
+
+a{
    text-decoration: none;
 
 }
 
+
+
 body {
     background-color: var(--background);
     margin: 1em;
+}
+
+body a:focus{   
+    border: 3px solid;
+    border-color: var(--bolcolor);
+    display: inline;
+    outline: none;
+}
+
+body button:focus{   
+    border: 3px solid;
+    border-color: var(--bolcolor);
+    outline: none;
+}
+
+body input:focus{
+    border: 5px solid;
+    border-color: var(--focuscolor2);
+    outline: none;
+}
+
+body li:hover{
+    border: 3px solid;
+    border-color: var(--bolcolor);
+    scale:1.1;
+
+}
+
+footer {
+list-style: none;
 }
 
 h1 {
@@ -89,6 +124,12 @@ header nav > button {
 
 header nav > button img {
     width: 3em;
+
+}
+
+header nav > button img:hover {
+    border: 3px solid;
+    border-color: var(--bolcolor);
 
 }
 
@@ -155,6 +196,8 @@ section:nth-of-type(2) ul{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     overflow-x: scroll;
+    overflow-y: hidden;
+ 
 }
 
 section:nth-of-type(2) ul li img{
@@ -167,11 +210,13 @@ section:nth-of-type(3) ul{
     display: flex;
     gap: 10px;
     overflow-x: scroll;
-    scroll-snap-type: mandatory;
+    overflow-y: hidden;
     justify-content: space-between;
+    scroll-snap-type: mandatory;
 }
 
-section:nth-of-type(3) ul li {
+section:nth-of-type(3) ul li a{
+    color: var(--color-text2);
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
@@ -184,7 +229,26 @@ section:nth-of-type(3) ul li img{
 
 }
 
-@media (width > 32.9em) {
+@media (width > 35em) {
+
+    header button:focus{
+        border: 3px solid;
+        border-color: var(--antibol);
+        outline: none;
+
+    }
+
+    body header a:focus{   
+        border: 3px solid;
+        border-color: var(--antibol);
+        outline: none;
+    }
+
+    body header a:hover{
+        border: 3px solid;
+        border-color: var(--antibol);
+        outline: none;
+    }
 	
 	header {
 		background-color: var(--bolcolor);
