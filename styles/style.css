@@ -60,7 +60,6 @@ body {
 body a:focus{   
     border: 3px solid;
     border-color: var(--bolcolor);
-    display: inline;
     outline: none;
 }
 
@@ -80,6 +79,7 @@ body li:hover{
     border: 3px solid;
     border-color: var(--bolcolor);
     scale:1.1;
+    
 
 }
 
