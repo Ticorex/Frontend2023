@@ -61,12 +61,14 @@ body a:focus{
     border: 3px solid;
     border-color: var(--bolcolor);
     outline: none;
+    scale: 0.95;
+    
 }
 
 body button:focus{   
     border: 3px solid;
     border-color: var(--bolcolor);
-    outline: none;
+    outline: none;      
 }
 
 body input:focus{
@@ -78,13 +80,12 @@ body input:focus{
 body li:hover{
     border: 3px solid;
     border-color: var(--bolcolor);
-    scale:1.1;
-    
 
 }
 
-footer {
-list-style: none;
+footer ul{
+    list-style: none;
+
 }
 
 h1 {
@@ -190,14 +191,48 @@ section ul{
     margin: none;
 }
 
+section:nth-of-type(2){
+    position: relative;
+}
+
+section:nth-of-type(2) button{
+    width: 2em;
+    height: 2em;
+    
+}
+
+section:nth-of-type(2) button img{
+    width: 100%;
+}
+
+section:nth-of-type(2) button:nth-of-type(1){
+    position: absolute;
+    top: 50%;
+    translate: 0% -50%;
+}
+
+section:nth-of-type(2) button:nth-of-type(2){
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    translate: 0% -50%;
+}
+
 section:nth-of-type(2) ul{
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    overflow-x: scroll;
+    translate: -0% ;
+    transition: 0.5s;
+    padding: 0;
+    overflow-x: hidden;
     overflow-y: hidden;
- 
+}
+
+section:nth-of-type(2) ul li a{
+    display: block;
+    height: 100%;
 }
 
 section:nth-of-type(2) ul li img{
@@ -209,10 +244,9 @@ section:nth-of-type(2) ul li img{
 section:nth-of-type(3) ul{
     display: flex;
     gap: 10px;
-    overflow-x: scroll;
-    overflow-y: hidden;
     justify-content: space-between;
     scroll-snap-type: mandatory;
+    padding: 0;
 }
 
 section:nth-of-type(3) ul li a{
@@ -225,7 +259,7 @@ section:nth-of-type(3) ul li a{
 }
 
 section:nth-of-type(3) ul li img{
-    width: 10em;
+    width: 100%;
 
 }
 
