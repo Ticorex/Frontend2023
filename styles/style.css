@@ -193,6 +193,7 @@ section ul{
 
 section:nth-of-type(2){
     position: relative;
+    overflow:hidden
 }
 
 section:nth-of-type(2) button{
@@ -226,8 +227,8 @@ section:nth-of-type(2) ul{
     translate: -0% ;
     transition: 0.5s;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    
+
 }
 
 section:nth-of-type(2) ul li a{
@@ -241,12 +242,42 @@ section:nth-of-type(2) ul li img{
 
 }
 
+section:nth-of-type(3){
+    position: relative;
+    overflow:hidden;
+    
+}
+
+section:nth-of-type(3) button{
+    width: 2em;
+    height: 2em;
+    
+}
+
+section:nth-of-type(3) button img{
+    width: 100%;
+}
+
+section:nth-of-type(3) button:nth-of-type(1){
+    position: absolute;
+    top: 50%;
+    translate: 0% -50%;
+}
+
+section:nth-of-type(3) button:nth-of-type(2){
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    translate: 0% -50%;
+}
+
 section:nth-of-type(3) ul{
     display: flex;
     gap: 10px;
     justify-content: space-between;
     scroll-snap-type: mandatory;
     padding: 0;
+    transition: 0.8s;
 }
 
 section:nth-of-type(3) ul li a{
