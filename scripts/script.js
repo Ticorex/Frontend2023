@@ -32,7 +32,7 @@ function moveListL(){
 }
 
 function moveListR(){
-    deals.style.translate = '-200%';
+    
 
     if (positie === 0){
         positie = 60
@@ -55,9 +55,9 @@ function moveListR(){
 function moveList2L(){
     
     if (positie === 200){
-           positie = 0
+           positie = 100
    
-       } else if (positie === 0){
+       } else if (positie === 100){
            positie = 0
        
        } 
@@ -66,12 +66,12 @@ function moveList2L(){
    }
 
 function moveList2R(){
-    categorie.style.translate = '-200%';
+    
 
     if (positie === 0){
-        positie = 200
+        positie = 100
 
-    } else if (positie === 200){
+    } else if (positie === 100){
         positie = 200
 
     } 
@@ -85,3 +85,24 @@ buttonRechts.addEventListener('click', moveListR);
 
 buttonLinks2.addEventListener('click', moveList2L);
 buttonRechts2.addEventListener('click', moveList2R);
+
+
+window.onresize = openDetails;
+
+const details = document.querySelectorAll ('details');
+
+function openDetails(event) {
+    const vpWidth = window.innerWidth
+
+    if (vpWidth > 560) {
+		details.forEach( detail => {
+			detail.open = true;
+		});
+	}
+	else {
+		details.forEach( detail => {
+			detail.open = false;
+		});
+	}
+} 
+

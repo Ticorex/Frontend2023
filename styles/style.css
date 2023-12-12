@@ -54,7 +54,7 @@ a{
 
 body {
     background-color: var(--background);
-    margin: 1em;
+    margin: 0;
 }
 
 body a:focus{   
@@ -81,6 +81,44 @@ body li:hover{
     border: 3px solid;
     border-color: var(--bolcolor);
 
+}
+
+details{
+    line-height: 2em;
+    margin: 2em 0 0 0;
+
+}
+
+details:hover{
+    border: 3px solid;
+    border-color: var(--bolcolor);
+}
+
+details[open]:hover{
+    border: none;
+}
+
+details summary{
+    list-style:none;
+    border-bottom: 1px solid var(--color-text2);
+    display: flex; 
+    /* dit zet de text in de footer zoals "Boeken" direct naast de pijltjes inplaats van een beetje er onder */
+    
+}
+
+details[open] summary{
+    font-weight: bold;
+
+}
+
+details summary::before{
+    content:url(/images/down-arrow.png);
+    
+}
+
+details[open] summary::before{
+    content:url(/images/up-arrow.png);
+    
 }
 
 footer ul{
@@ -181,6 +219,10 @@ header nav ul li img{
     width: 2em;
     
  }
+
+main{
+    margin: 1em;
+}
 
 section:first-of-type img{
     width: 100%;
@@ -294,6 +336,7 @@ section:nth-of-type(3) ul li img{
 
 }
 
+
 @media (width > 35em) {
 
     header button:focus{
@@ -313,6 +356,20 @@ section:nth-of-type(3) ul li img{
         border: 3px solid;
         border-color: var(--antibol);
         outline: none;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+        
+
+    }
+
+    footer h2{
+        grid-column: 1 / 4;
+        height: 100%;
     }
 	
 	header {
