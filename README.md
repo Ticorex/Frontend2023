@@ -181,7 +181,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik heb met behulp van de student assistent & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb met behulp van de student assistent pijltjes toets knoppen gemaakt. Met javascript hebben we het zo gemaakt dat je de aanbiedingen ook daadwerkelijk kan laten bewegen. Ik heb dit hierna zelf ook nog een keer toegepast bij de " Kies categorie " sectie. <img src='readme-images/websitepijltjestoetsen.jpg'> <img src='readme-images/javascript.jpg'>.
+
+  Wat lastiger was is dat als ik de grootte van de site aanpas dit trucje niet zo goed meer werkt, omdat we gebruik maken van de translate waarde om de fotos te verplaatsen. Bijvoorbeeld translate 60% is een heel andere afstand op een groter scherm dan op het kleinere scherm. Op dit plaatje zie je wat er gebeurt als het scherm te groot wordt en je de pijltjes-buttons gebruikt.
+  <img src='readme-images/javascriptwerktnietmeer.jpg>
 
 
   ### Agenda voor meeting

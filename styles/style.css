@@ -24,6 +24,9 @@
    
 }
 
+.hidden{
+    display: none;
+}
 
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -35,6 +38,7 @@
     width: 1px;
   }
   /* https://www.a11yproject.com/posts/how-to-hide-content */
+
 
 
 /****************/
@@ -137,6 +141,11 @@ h1 img{
 
 }
 
+h2{
+    font-family: Arial, sans-serif;
+
+}
+
 h3 {
     font-weight: 100;
 }
@@ -163,6 +172,7 @@ header nav > button {
 
 header nav > button img {
     width: 3em;
+   
 
 }
 
@@ -182,10 +192,11 @@ header nav form{
 }
 
 header nav form input{
-    flex-grow: 1;
-    min-height: 3.5em;
     border-radius: 3em;
     border-style: none;
+    flex-grow: 1;
+    min-height: 3.5em;
+    padding-left: 1em;
     
 }
 
@@ -224,8 +235,15 @@ main{
     margin: 1em;
 }
 
+section:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+
 section:first-of-type img{
     width: 100%;
+    max-width: 70em;
+
 }
 
 section ul{
@@ -273,9 +291,15 @@ section:nth-of-type(2) ul{
 
 }
 
+section:nth-of-type(2) ul li{
+    width: 20.5em;
+}
+
 section:nth-of-type(2) ul li a{
-    display: block;
+    display: block; 
+    /* dit is voor de border van de focus state */
     height: 100%;
+    width: 20em;
 }
 
 section:nth-of-type(2) ul li img{
@@ -337,6 +361,7 @@ section:nth-of-type(3) ul li img{
 }
 
 
+
 @media (width > 35em) {
 
     header button:focus{
@@ -360,16 +385,16 @@ section:nth-of-type(3) ul li img{
 
     footer{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: max-content;
         
-        
-
     }
 
+    
+
     footer h2{
-        grid-column: 1 / 4;
-        height: 100%;
+        grid-column: 1 / -1;
+
     }
 	
 	header {
@@ -392,6 +417,7 @@ section:nth-of-type(3) ul li img{
 
     header nav img{
         filter: invert() brightness(100);
+        
     }
 	
 	header nav form {
