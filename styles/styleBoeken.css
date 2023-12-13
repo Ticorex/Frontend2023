@@ -103,8 +103,10 @@ body ul{
 }
 
 details{
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 2em;
     margin: 2em 0 0 0;
+    
 
 }
 
@@ -157,7 +159,8 @@ h1 img{
 }
 
 h2{
-    font-family: Arial, sans-serif;
+    font-family: 'Bevan', serif;
+    font-weight: 100;
 
 }
 
@@ -248,7 +251,8 @@ main{
 }
 
 section:nth-of-type(1){
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cutive', serif;
+    font-size: small;
     
 }
 

@@ -111,6 +111,7 @@ function openMenu() {
     mainNav.classList.remove("open");
   }
 
+
 function noBurger() {
     const vpWidth = window.innerWidth;
 
