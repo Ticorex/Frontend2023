@@ -24,7 +24,7 @@ function openDetails(vpWidth) {
 }
 
 function addClass(vpWidth) {
-    if (vpWidth < 896) {
+    if (vpWidth < 898) {
         hiddenElements.forEach(function (element) {
             element.classList.add('hidden');
         });
@@ -32,7 +32,7 @@ function addClass(vpWidth) {
 }
 
 function deleteClass(vpWidth) {
-    if (vpWidth > 896) {
+    if (vpWidth > 898) {
         hiddenElements.forEach(function (element) {
             element.classList.remove('hidden');
         });

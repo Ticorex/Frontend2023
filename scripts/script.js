@@ -94,12 +94,29 @@ function openDetails(event) {
 
 
 var hamburgr = document.querySelector('header nav button');
+var mainNav = document.querySelector("main nav");
+
+hamburgr.onclick = openMenu;
+
+function openMenu() {
+    mainNav.classList.add("open");
+  }
+
+  var bigX = document.querySelector("main nav button");
+
+
+  bigX.onclick = sluitMenu;
+  
+  function sluitMenu() {
+    mainNav.classList.remove("open");
+  }
 
 function noBurger() {
     const vpWidth = window.innerWidth;
 
     if (vpWidth > 561) {
         hamburgr.classList.add('hidden');
+        mainNav.classList.add('hidden');
     }
 }
 
@@ -108,6 +125,8 @@ function hmmBurger() {
 
     if (vpWidth < 561) {
         hamburgr.classList.remove('hidden');
+        mainNav.classList.remove('hidden');
+        mainNav.classList.remove("open");
     }
 }
 
@@ -123,6 +142,9 @@ window.addEventListener('resize', function() {
 window.addEventListener('resize', function() {
     hmmBurger(); // Call the function to update hamburger visibility
 });
+
+
+
 
 
 //Dit is wat ik zelf had samen met de student assistent, maar dat was niet goed responsive als het
