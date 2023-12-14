@@ -60,6 +60,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
   1. Niet elke button/link is goed omschreven. De meeste buttons en links hebben wel een goede naam, maar sommige heten gewoon "button" of "link".
   2. Html elementen zoals h1 etc zijn allemaal netjes toegepast.
+  3. Veel is wel in orde, maar de Images zijn helemaal niet accesible. Ze zijn niet eens selecteerbaar, laat staan dat ze omschreven worden of dat je er op kan klikken.
+     Terwijl sommige images geen tekst er onder hebben.
 
 
 </details>
@@ -72,13 +74,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/bolpaginabreakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch deel (Menu): 
+  <img src="readme-images/bolbreakdownschetsdynamisch.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### wellicht nog een dynamisch deel (Carousel): 
+  <img src="readme-images/bolpaginabreakdowncarousel.jpg" width="500px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -150,10 +152,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Ik heb een rare bug samen met Sanne opgelost waardoor het Bol.com plaatje in mn h1 
+    veel te veel ruimte in nam. We zijn er niet achter waardoor het nou kwam.
+  - Ik heb een link doorgestuurd gekregen over hoe je carousels nou precies moet maken.
 
 </details>
 
@@ -167,7 +168,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ - Mijn h1 wordt door de narrator niet opgelezen.
+ - Mijn focus state is beter zichtbaar dan op bol.com. Ook worden verschillende elementen
+  op de echte site heel klein als het scherm groter wordt, dit is bij mij niet zo.
+ - Naast de h1 kan de narrator nog bij meer dingen niet, snap niet helemaal waarom niet.
+ - Ondanks dat mn html op "nl" ingesteld staat leest mijn narrator het in het engels voor. De aria-labels werken wel goed.
 
 </details>
 
@@ -177,7 +182,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -208,10 +213,8 @@ Ruby
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb uitleg over summaries en details gehad. Ook heb ik hier een link over gehad.
+  - Ik heb uitleg gekregen over hoe je met javascript dingen op basis van de viewWidth kan laten veranderen.
 
 </details>
 
@@ -225,19 +228,26 @@ Ruby
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Karakter1.jpg" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/Karakter2.jpg" width="750px" alt="uitkomst opdracht 1">
+  De header / site ziet er erg anders uit gebaseerd op screen width!
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+ Ik heb erg veel over code geleerd dit blok, aangezien ik alles eigenlijk weer een beetje vergeten was. Als het lukt is het eigenlijk wel leuk. Ik heb vooral geleerd over flexbox en grid goed gebruiken, zodat je site op elke grootte er een beetje oke uitziet. Ook heb ik veel geleerd over dingen met javascript laten veranderen gebaseerd op classes en view width.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/gridexample1.jpg" width="375px" alt="top">
+  <img src="readme-images/gridexample2.jpg" width="700px" alt="top">
+Hier zie je dat het zelfde stukje veel meer buttons en elementen heeft gebaseerd op
+hoe breed het scherm is.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+   De 2e pagina is nog niet echt af. Ook zijn er verschillende dingen die nog niet goed werken, zoals deze buttons. Op klein scherm werken ze prima, maar omdat ze absolute zijn bewegen ze niet goed mee en zijn ze dus niet goed responsive.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/weeh1.jpg" width="375px" alt="bummer">
+  <img src="readme-images/weeh2.jpg" width="500px" alt="bummer">
+ 
 </details>
 
 
@@ -253,8 +263,8 @@ Ruby
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. ChatGpt voor Javascript errors fixen
+  2. https://www.a11yproject.com/posts/how-to-hide-content om kopjes hidden te maken maar wel leesbaar voor de narrator.
+  3.  Frank van der Velde, een vriend van me die in ICT werkt, carousels op mijn site te verbeteren en responsive te maken.
 
 </details>

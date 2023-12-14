@@ -91,6 +91,8 @@ function openDetails(event) {
     }
 } 
 
+// Chatgpt voor de "forEach" verandering.
+
 
 
 var hamburgr = document.querySelector('header nav button');
@@ -144,12 +146,16 @@ window.addEventListener('resize', function() {
     hmmBurger(); // Call the function to update hamburger visibility
 });
 
+//ChatGpt voor de " resize" function en optimisatie. 
 
 
 
 
-//Dit is wat ik zelf had samen met de student assistent, maar dat was niet goed responsive als het
-//scherm grooter werd.
+//Dit is wat ik zelf had gemaakt samen met de student assistent 
+// om de carousel werkend te krijgen, maar dat was niet goed responsive 
+//als het scherm grooter werd.
+
+
 // function moveListL(){
     
 //  if (positie === 60){
